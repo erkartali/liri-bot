@@ -11,7 +11,7 @@ var fs = require("fs");
 // console.log(process.argv);
 
 var api = process.argv[2];
-var value = process.argv[3];
+var value = process.argv.slice(3).join(' ');
 
 switch (api) {
   case "concert-this":
